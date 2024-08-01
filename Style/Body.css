@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 févr. 2024, 17:25:10
+    Author     : BenoitHarck
+*/
+body{
+    background-color:#ffffff;
+    font-size: 29px;
+}
+.titreform{
+    color:darkcyan;    
+}
+/*.img1{
+    justify-content: center;
+    text-align: center;
+}*/
+.formtab{
+    display: grid;
+    grid-column: span;
+}
+.TitreImg{
+    justify-content: center;
+    text-align: center;
+}

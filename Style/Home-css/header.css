@@ -1,0 +1,63 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 févr. 2024, 14:06:36
+    Author     : BenoitHarck
+*/
+.container-page{
+    background-color: #ffffff;
+    margin-top: 90px; 
+    margin-bottom: 90px;
+    /*La valeur doit être égale à la hauteur de votre header*/ 
+    /*    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  Ajoute une ombre */
+}
+
+.eltmntHead{
+
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
+}
+.sp{
+    color: darkcyan;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight:bolder;
+    align-content: center;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+
+a{
+    color: darkcyan;
+}
+.profil{
+    
+    font-size: 25px;
+    text-align: right;
+    padding-top: 50px;
+    margin-right: 19px;
+}
+
+.profil a{
+    
+    margin-right: 15px;
+}
+
+.LogoTitre{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hea{
+    margin-bottom: 15px;
+}

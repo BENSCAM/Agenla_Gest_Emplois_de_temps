@@ -1,0 +1,35 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 févr. 2024, 20:26:32
+    Author     : BenoitHarck
+*/
+
+.tabhead{
+    color: aliceblue;
+    background-color: darkcyan;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
+}
+
+.white-text td {
+    color: darkcyan;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
+}
+
+.E,.S{
+    color: darkblue;
+    font-size:15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.notfound{
+    color: #064997;
+    text-align: center;
+    font-size: 35px;
+    opacity: 0.5;
+}

@@ -1,0 +1,42 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 févr. 2024, 17:07:56
+    Author     : BenoitHarck
+*/
+
+label{
+    color:darkcyan;
+}
+
+.combobox,input {
+    font-size: 25px;
+    border-radius: 7px;
+    background-color: white;
+    border: 2px appworkspace solid;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
+}
+
+.f{
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+/*    padding-top: 10px;*/
+    margin-top: 10px;
+    box-shadow: 10px 10px 20px rgba(95,158,160,0.4);
+}
+p{
+    color: darkcyan;
+    font-size: 27px;
+}
+
+.sub{
+    font-size: 25px;
+    color: darkcyan;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    display: block;
+}
+

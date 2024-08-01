@@ -1,0 +1,94 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 févr. 2024, 08:30:19
+    Author     : BenoitHarck
+*/
+
+:root {
+    --base-grid: 8px;
+    --colour-white: #fff;
+    --colour-black: #1a1a1a;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-170deg,#064997 20%,#105ba7);
+    background-position: 100%;
+}
+
+body {
+    background-image: linear-gradient(270deg,#2b67ac 3px,transparent 0),linear-gradient(#2b67ac 3px,transparent 0),linear-gradient(270deg,rgba(43,103,172,.4) 1px,transparent 0),linear-gradient(#2b67ac 1px,transparent 0),linear-gradient(270deg,rgba(43,103,172,.4) 1px,transparent 0),linear-gradient(#2b67ac 1px,transparent 0);
+    background-size: 112px 112px,112px 112px,56px 56px,56px 56px,28px 28px,28px 28px;
+    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Contnav_link{
+    display: flex;
+}
+.links {
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    margin-top: 20px;
+
+}
+.entete{
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    margin-left:7%;
+}
+
+h2{
+     color: #064997;
+     text-align: center;
+     
+}
+.img{
+    /*    border: black solid 6px;
+        float: right;
+        margin-right: 100px;
+        margin-top: 70px;*/
+}
+
+.fil{
+    color: #064997;
+    font-size: 20px;
+    text-align: center;
+    /*    border: black solid 6px;*/
+
+}
+
+.fil0{
+    /*     border: black solid 7px;
+          margin-right: 40%;
+          margin-left: 30%;
+           text-align: center;*/
+}
+.fil1{
+    margin-top: 30px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
