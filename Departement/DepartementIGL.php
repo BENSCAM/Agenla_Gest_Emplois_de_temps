@@ -1,4 +1,5 @@
 <?php
+global $Tabclasses;
 include_once '../Function/FunctionProgrammation.php';
 include_once '../Function/TraitementAJAXemplois.php';
 include_once '../Function/TransformationBD.php';
