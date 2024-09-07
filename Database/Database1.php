@@ -18,11 +18,7 @@ class Database1 {
      private $password = 'Benoit1212!@'; // Mot de passe MySQL
      private $connection; // Objet de connexion à la base de données
     
-//    private $host = '185.98.131.161'; // Adresse du serveur MySQL
-//    private $dbname = 'boisc2249906_47nzxs'; // Nom de la base de données
-//    private $username = 'boisc2249906'; // Nom d'utilisateur MySQL
-//    private $password = 'Njandjeu@235'; // Mot de passe MySQL
-//    private $connection; // Objet de connexion à la base de données
+
 
     public function __construct() {
         try {
