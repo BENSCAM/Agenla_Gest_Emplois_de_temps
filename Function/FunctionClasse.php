@@ -49,7 +49,7 @@ function AfficherListeClasse($LesClasses) {
 
     foreach ($LesClasses as $classe) {
         $html .= '<li>';
-        $html .= '<a href="../Departement/DepartementIGL?id='.$classe->getIdClasse().'" data-valeur='.$classe->getIdClasse().'>'.$classe->getNomClasse().$classe->getNiveau().'</a>';
+        $html .= '<a href="../Departement/DepartementIGL.php?id='.$classe->getIdClasse().'" data-valeur='.$classe->getIdClasse().'>'.$classe->getNomClasse().$classe->getNiveau().'</a>';
         $html .= '</li>';
     }
     
