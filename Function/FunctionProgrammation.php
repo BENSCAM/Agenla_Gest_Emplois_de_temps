@@ -178,7 +178,7 @@ function SaveProgrammation(Programmation $Prog) {
 
         // Deuxième requête : mettre à jour l'état de la salle pour indiquer qu'elle est programmée
         $updateSql = 'UPDATE salle SET Etat = 1 WHERE ID_SALLE = ?';
-        $updateStmt = $db->prepare($updateSql);
+        $updateStmt = $db->executeQuery($updateSql);
         $updateStmt->execute([$idsall]);
 
         include_once '../Programmation/Programmer.php';
