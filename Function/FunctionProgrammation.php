@@ -176,6 +176,11 @@ function SaveProgrammation(Programmation $Prog) {
         $stmt = $db->executeQuery($sql);
         $stmt->execute([$idue, $idsall, $idhorraire, $idsemaine, $idclass, $idEnseig]);
 
+        // Deuxième requête : mettre à jour l'état de la salle pour indiquer qu'elle est programmée
+        $updateSql = 'UPDATE salle SET Etat = 1 WHERE ID_SALLE = ?';
+        $updateStmt = $db->prepare($updateSql);
+        $updateStmt->execute([$idsall]);
+
         include_once '../Programmation/Programmer.php';
         echo '<script>
             Swal.fire({
