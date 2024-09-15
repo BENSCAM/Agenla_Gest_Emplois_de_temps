@@ -31,13 +31,19 @@ function CreerTableauObjetSalle($salles) {
     return $LesSalles;
 }
 
-function afficherSalle($classes) {
+function afficherSalle($LesSalles) {
    
     // Parcourir chaque classe
-    foreach ($classes as $classe) {
-        
-        $html .= '<option value="' . $classe->getIdSalle() . '">';
-        $html .= $classe->getCodeSalle();
+    foreach ($LesSalles as $classe) {
+
+        $isOccopied= $classe->getEtat();
+        $html .= '<option value="' . $classe->getIdSalle() . '"';
+
+        if($isOccopied==1){
+            $html .= ' disabled style="color: grey;"'; // Griser et désactiver l'option
+        }
+        $html .= '>';
+        $html .= $classe->getCodeSalle().' ->('. $classe->getCapacite().') places';
         $html .= '</option>';
     }
     $html .= '</select>'; // Fin du tableau

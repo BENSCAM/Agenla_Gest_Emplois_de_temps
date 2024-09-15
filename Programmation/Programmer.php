@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
+global $TabUes, $Tabsalles, $Tabenseignants, $Tabclasses;
 include_once '../Function/FunctionClasse.php';
 include_once '../Function/FunctionSalle.php';
 include_once '../Function/FunctionHoraire.php';
