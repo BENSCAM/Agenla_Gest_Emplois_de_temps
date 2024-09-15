@@ -94,12 +94,14 @@ function genererTableauHTML($programmationsParSemaine) {
         $html .= '</table>';
         $html .= genererFooter();
         $html .= '</div>';
+        $html .= '<center>';
         $html .= '<button onclick="imprimerEmploiDuTemps()">Imprimer l\'Emploi du Temps</button>';
+        $html .= '</center>';
         $html .= '<script>
                     function imprimerEmploiDuTemps() {
-                        var contenuAImprimer = document.querySelector("#impression").innerHTML;
-                        var fenetreImpression = window.open("", "_blank");
-                        var styles = `<style>
+                        let contenuAImprimer = document.querySelector("#impression").innerHTML;
+                        let fenetreImpression = window.open("", "_blank");
+                        let styles = `<style>
                                         @media print {
                                             /* Vos styles d\'impression ici */
                                             table { width: 100%; height: 50%; border-collapse: collapse; }
@@ -129,7 +131,6 @@ function genererEnteteEmploiDuTemps($nomAcademie, $anneeAcademique, $semestre, $
     return <<<HTML
         <center>
             <div class="entete">
-
                     <div>
                         <img src="../image/logo.png" width="150px" alt="Logo" class="img"/>
                     </div>

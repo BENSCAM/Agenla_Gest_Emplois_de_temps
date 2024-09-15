@@ -26,7 +26,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="stylesheet" href="../Style/Home-css/header.css"/>
         <!--        <link rel="stylesheet" href="../Style/Tableau.css">
                 <link rel="stylesheet" href="../Style/Home-css/Header.css"/>-->
-        <script src="../jquery/dist/jquery.min.js"></script>
+<!--        <script src="../jquery/dist/jquery.min.js"></script>-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     </head>
     <!--    /* 
