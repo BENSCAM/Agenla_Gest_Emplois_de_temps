@@ -5,6 +5,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 
+global $TabUes;
 include_once '../Function/TransformationBD.php';
 include_once '../UniteEnseignement/Ue.php';
 

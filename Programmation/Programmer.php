@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
-global $TabUes, $Tabsalles, $Tabenseignants, $Tabclasses;
+global $TabUes, $Tabsalles, $Tabenseignants, $Tabclasses, $Tabsemaines, $TabHoraires;
 include_once '../Function/FunctionClasse.php';
 include_once '../Function/FunctionSalle.php';
 include_once '../Function/FunctionHoraire.php';
@@ -65,7 +65,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 var valeurSelectionnee = $(this).val();
                 console.log(valeurSelectionnee);
                 $.ajax({
-                    url: '../Function/TraitementAJAXue.php', // Remplacez par le chemin de votre fichier PHP
+                    url: '../Function/TraitementAJAXue.php', // Fichier de traitement
                     method: 'POST',
                     data: {
                         valeur: valeurSelectionnee
@@ -78,11 +78,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 });
             });
         });
-
-
     </script>
 
+    <script>
+        $(document).ready(function() {
+            $('#IdsemaineSelect, #IdhoraireSelect').change(function() {
+                var semaine = $('#IdsemaineSelect').val();
+                var periode = $('#IdhoraireSelect').val();
+                console.log(semaine);
+                console.log(periode);
+                if (semaine && periode) {
+                    // Envoi d'une requête Ajax au serveur pour obtenir les salles disponibles
+                    $.ajax({
+                        url: '../Function/TraitementAJAXperiode.php', // L'URL du fichier de traitement
+                        method: 'POST',
+                        data: {
+                            semaine: semaine,
+                            periode: periode
+                        },
+                        success: function(html) {
+                            // Mise à jour le select des salles en fonction de la réponse
+                            $('#IdsalleSelect').html(html);
+                        },
+                        error: function(xhr, status, error) {
+                            console.error('Erreur Ajax:', error);
+                        }
+                    });
+                }
+            });
+        });
 
+    </script>
     <body>
         <div class="container">
             <header class="eltmntHead">

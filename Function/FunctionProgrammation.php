@@ -314,3 +314,20 @@ function VerifierConflitTroncCommun(Programmation $Prog) {
         echo "Erreur d'enregistrement : " . $e->getMessage();
     }
 }
+
+function getAvailableSalles($semaine, $periode)
+{
+    $db = new Database1();
+    // Requête pour récupérer les salles et voir si elles sont programmées pour la semaine et la période donnée
+    $sql = "SELECT s.ID_SALLE, s.CODE_SALLE, s.Capacite, 
+                   (SELECT COUNT(*) FROM programmer p WHERE p.ID_SALLE = s.ID_SALLE 
+                    AND p.ID_SEMAINE = :semaine AND p.ID_HORAIRE = :periode) as Occupation
+            FROM salle s";
+
+    $stmt = $db->executeQuery($sql);
+    $stmt->execute([':semaine' => $semaine, ':periode' => $periode]);
+
+    $salles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    return $salles;
+}
